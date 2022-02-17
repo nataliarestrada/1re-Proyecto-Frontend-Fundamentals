@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
 
+/* HEADER NAV */
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -42,8 +43,6 @@ header{
     cursor: pointer;
     height: 60px;
     width: auto;
-    /* height:50px;
-    width: 150px; */
 }
 
 .nav_links{
@@ -76,33 +75,31 @@ button:hover{
 }
 
 /* PRODUCTOS */
+.titulo{
+	margin-top: 20px;
+	color: #24303c;
+	font-family: "Montserrat", bold;
+    font-size: 32px;
+	text-align: center;
+}
 
-/*Cards*/
 .container-card{
 	width: 100%;
-	display: flex;
-	max-width: 1100px;
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	max-width: 1500px;
 	margin: auto;
 	margin-top: 20px;	
 }
-.title-cards{
-	width: 100%;
-	max-width: 1080px;
-	margin: auto;
-	padding: 20px;
-	margin-top: 20px;
-	text-align: center;
-	color: #7a7a7a;
-}
+
 .card{
-	width: 100%;
 	margin: 20px;
 	border-radius: 8px;
 	overflow: hidden;
-	background:#fff;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
+	background-color: #24303c;
 }
 .card:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
@@ -111,6 +108,12 @@ button:hover{
 .card img{
 	width: 100%;
 	height: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.card figure{
+	background-color: white;
+	padding: 15px;
 }
 .card .contenido-card{
 	padding: 15px;
@@ -124,8 +127,8 @@ button:hover{
 }
 .card .contenido-card p{
 	line-height: 1.8;
-	color: white;
-	font-size: 14px;
+	color: #EBB836;
+	font-size: 20px;
 	margin-bottom: 5px;
 }
 .card .contenido-card a{
@@ -163,10 +166,10 @@ footer{
 }
 
 .footer-content h3{
-	font-size: 1.8rem;
+	font-size: 30px;
 	font-weight: 400;
 	text-transform: capitalize;
-	line-height: 3rem;
+	line-height: 50px;
 }
 
 .footer-content p{
@@ -181,7 +184,7 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 1rem 0 3rem 0;
+	margin: 20px 0 50px 0;
 }
 
 .socials li{
@@ -194,7 +197,7 @@ footer{
 }
 
 .socials a i{
-	font-size: 1.1rem;
+	font-size: 30px;
 	transition: color .4s ease;
 }
 
@@ -204,7 +207,7 @@ footer{
 
 .footer-bottom{
 	background: #000;
-	width: 100vw;
+	width: 100%;
 	padding: 20px 0;
 	text-align: center;
 }
